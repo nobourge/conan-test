@@ -1,0 +1,60 @@
+C:\Users\bourg\AppData\Local\Programs\Python\Python37\Scripts\conan.exe install C:/Users/bourg/Documents/GitHub/conan-test -if=C:\Users\bourg\Documents\GitHub\conan-test\cmake-build-debug -pr=compiler=gcc_compiler_version=4_9
+Configuration:
+[settings]
+arch=x86_64
+arch_build=x86_64
+build_type=Release
+compiler=gcc
+compiler.libcxx=libstdc++11
+compiler.version=4.9
+os=Windows
+os_build=Windows
+[options]
+[build_requires]
+[env]
+
+Poco/1.9.0@pocoproject/stable: Not found in local cache, looking in remotes...
+Poco/1.9.0@pocoproject/stable: Trying with 'conancenter'...
+ERROR: Unable to find 'Poco/1.9.0@pocoproject/stable' in remotes
+"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2019.3.4/bin/ninja/win/ninja.exe" -G Ninja C:\Users\bourg\Documents\GitHub\conan-test
+-- Conan: Automatic detection of conan settings from cmake
+-- Conan: Settings= -s;build_type=Debug;-s;compiler=gcc;-s;compiler.version=8;-s;compiler.libcxx=libstdc++11
+-- Conan: checking conan executable
+-- Conan: Found program C:/Users/bourg/AppData/Local/Programs/Python/Python37/Scripts/conan.exe
+-- Conan: Version found Conan version 1.45.0
+-- Conan executing: C:/Users/bourg/AppData/Local/Programs/Python/Python37/Scripts/conan.exe install . -s build_type=Debug -s compiler=gcc -s compiler.version=8 -s compiler.libcxx=libstdc++11 -g=cmake
+Configuration:
+[settings]
+arch=x86_64
+arch_build=x86_64
+build_type=Debug
+compiler=gcc
+compiler.libcxx=libstdc++11
+compiler.version=8
+os=Windows
+os_build=Windows
+[options]
+[build_requires]
+[env]
+
+conanfile.txt: Installing package
+Requirements
+Packages
+
+Installing (downloading, building) binaries...
+conanfile.txt: Generator txt created conanbuildinfo.txt
+conanfile.txt: Generator cmake created conanbuildinfo.cmake
+conanfile.txt: Aggregating env generators
+conanfile.txt: Generated conaninfo.txt
+conanfile.txt: Generated graphinfo
+-- Conan: Loading conanbuildinfo.cmake
+-- Conan: Adjusting output directories
+-- Conan: Using cmake global configuration
+-- Conan: Adjusting default RPATHs Conan policies
+-- Conan: Adjusting language standard
+-- Current conanbuildinfo.cmake directory: C:/Users/bourg/Documents/GitHub/conan-test/cmake-build-debug
+-- Conan: Compiler GCC>=5, checking major version 8
+-- Conan: Checking correct version: 8
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/bourg/Documents/GitHub/conan-test/cmake-build-debug
