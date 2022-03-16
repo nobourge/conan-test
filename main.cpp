@@ -2,8 +2,9 @@
 // Created by bourg on 27-02-22.
 //
 
-#include "Poco/MD5Engine.h"
+#include "conan/Poco/MD5Engine.h"
 #include "Poco/DigestStream.h"
+#include "boost/circular_buffer.h"
 #include <iostream>
 int main(int argc, char** argv)
 {
