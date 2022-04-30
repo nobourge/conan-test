@@ -1,245 +1,114 @@
-/snap/clion/184/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/noe/Github/conan-test
+C:\Users\bourg\AppData\Local\Programs\Python\Python37\Scripts\conan.exe install C:/Users/bourg/Documents/GitHub/conan-test -if=C:\Users\bourg\Documents\GitHub\conan-test\cmake-build-debug -pr=compiler=gcc_compiler_version=4_9
+ERROR: Conanfile not found at C:/Users/bourg/Documents/GitHub/conan-test\conanfile.py or C:/Users/bourg/Documents/GitHub/conan-test\conanfile.txt
+"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2019.3.4/bin/ninja/win/ninja.exe" -G Ninja C:\Users\bourg\Documents\GitHub\conan-test
 -- CONAN_DISABLE_CHECK_COMPILER
 -- Conan: checking conan executable
--- Conan: Found program /home/noe/.local/bin/conan
--- Conan: Version found Conan version 1.46.0
--- Conan executing: /home/noe/.local/bin/conan install . --remote conancenter --build missing --settings build_type=Debug --settings compiler=gcc --settings compiler.version=9 --settings compiler.libcxx=libstdc++11
+-- Conan: Found program C:/Users/bourg/AppData/Local/Programs/Python/Python37/Scripts/conan.exe
+-- Conan: Version found Conan version 1.45.0
+-- Conan executing: C:/Users/bourg/AppData/Local/Programs/Python/Python37/Scripts/conan.exe install . --remote conancenter --build missing
 Configuration:
 [settings]
 arch=x86_64
 arch_build=x86_64
-build_type=Debug
-compiler=gcc
-compiler.libcxx=libstdc++11
-compiler.version=9
-os=Linux
-os_build=Linux
+build_type=Release
+compiler=Visual Studio
+compiler.runtime=MD
+compiler.version=17
+os=Windows
+os_build=Windows
 [options]
 [build_requires]
 [env]
 
-poco/1.11.1: Retrieving from server 'conancenter' 
-poco/1.11.1: Trying with 'conancenter'...
-Downloading conanmanifest.txt
-Downloading conanfile.py
-Downloading conan_export.tgz
-poco/1.11.1: Downloaded recipe revision 0
-pcre/8.45: Retrieving from server 'conancenter' 
-pcre/8.45: Trying with 'conancenter'...
-Downloading conanmanifest.txt
-Downloading conanfile.py
-Downloading conan_export.tgz
-pcre/8.45: Downloaded recipe revision 0
-expat/2.4.1: Retrieving from server 'conancenter' 
-expat/2.4.1: Trying with 'conancenter'...
-Downloading conanmanifest.txt
-Downloading conanfile.py
-Downloading conan_export.tgz
-expat/2.4.1: Downloaded recipe revision 0
-sqlite3/3.36.0: Retrieving from server 'conancenter' 
-sqlite3/3.36.0: Trying with 'conancenter'...
-Downloading conanmanifest.txt
-Downloading conanfile.py
-Downloading conan_export.tgz
-sqlite3/3.36.0: Downloaded recipe revision 0
-openssl/1.1.1l: Retrieving from server 'conancenter' 
-openssl/1.1.1l: Trying with 'conancenter'...
-Downloading conanmanifest.txt
-Downloading conanfile.py
-Downloading conan_export.tgz
-openssl/1.1.1l: Downloaded recipe revision 0
-libpq/13.4: Retrieving from server 'conancenter' 
-libpq/13.4: Trying with 'conancenter'...
-Downloading conanmanifest.txt
-Downloading conanfile.py
-Downloading conan_export.tgz
-libpq/13.4: Downloaded recipe revision 0
-apr/1.7.0: Retrieving from server 'conancenter' 
-apr/1.7.0: Trying with 'conancenter'...
-Downloading conanmanifest.txt
-Downloading conanfile.py
-Downloading conan_export.tgz
-apr/1.7.0: Downloaded recipe revision 0
-apr-util/1.6.1: Retrieving from server 'conancenter' 
-apr-util/1.6.1: Trying with 'conancenter'...
-Downloading conanmanifest.txt
-Downloading conanfile.py
-Downloading conan_export.tgz
-apr-util/1.6.1: Downloaded recipe revision 0
-libiconv/1.16: Retrieving from server 'conancenter' 
-libiconv/1.16: Trying with 'conancenter'...
-Downloading conanmanifest.txt
-Downloading conanfile.py
-Downloading conan_export.tgz
-libiconv/1.16: Downloaded recipe revision 0
-libmysqlclient/8.0.25: Retrieving from server 'conancenter' 
-libmysqlclient/8.0.25: Trying with 'conancenter'...
-Downloading conanmanifest.txt
-Downloading conanfile.py
-Downloading conan_export.tgz
-libmysqlclient/8.0.25: Downloaded recipe revision 0
-zstd/1.5.2: Retrieving from server 'conancenter' 
-zstd/1.5.2: Trying with 'conancenter'...
-Downloading conanmanifest.txt
-Downloading conanfile.py
-Downloading conan_export.tgz
-zstd/1.5.2: Downloaded recipe revision 0
-lz4/1.9.3: Retrieving from server 'conancenter' 
-lz4/1.9.3: Trying with 'conancenter'...
-Downloading conanmanifest.txt
-Downloading conanfile.py
-Downloading conan_export.tgz
-lz4/1.9.3: Downloaded recipe revision 0
 conanfile.txt: Installing package
 Requirements
-    apr/1.7.0 from 'conancenter' - Downloaded
-    apr-util/1.6.1 from 'conancenter' - Downloaded
     boost/1.73.0 from 'conancenter' - Cache
+    brotli/1.0.9 from 'conancenter' - Cache
     bzip2/1.0.8 from 'conancenter' - Cache
-    expat/2.4.1 from 'conancenter' - Downloaded
+    double-conversion/3.2.0 from 'conancenter' - Cache
     fmt/6.1.2 from 'conancenter' - Cache
-    libbacktrace/cci.20210118 from 'conancenter' - Cache
-    libiconv/1.16 from 'conancenter' - Downloaded
-    libmysqlclient/8.0.25 from 'conancenter' - Downloaded
-    libpq/13.4 from 'conancenter' - Downloaded
-    lz4/1.9.3 from 'conancenter' - Downloaded
-    openssl/1.1.1l from 'conancenter' - Downloaded
-    pcre/8.45 from 'conancenter' - Downloaded
-    poco/1.11.1 from 'conancenter' - Downloaded
-    sqlite3/3.36.0 from 'conancenter' - Downloaded
+    freetype/2.11.1 from 'conancenter' - Cache
+    glib/2.71.3 from 'conancenter' - Cache
+    harfbuzz/4.0.1 from 'conancenter' - Cache
+    libelf/0.8.13 from 'conancenter' - Cache
+    libffi/3.4.2 from 'conancenter' - Cache
+    libgettext/0.21 from 'conancenter' - Cache
+    libiconv/1.16 from 'conancenter' - Cache
+    libpng/1.6.37 from 'conancenter' - Cache
+    libpq/13.6 from 'conancenter' - Cache
+    openssl/1.1.1m from 'conancenter' - Cache
+    pcre/8.45 from 'conancenter' - Cache
+    pcre2/10.37 from 'conancenter' - Cache
+    qt/6.2.3 from 'conancenter' - Cache
+    sqlite3/3.38.1 from 'conancenter' - Cache
     zlib/1.2.11 from 'conancenter' - Cache
-    zstd/1.5.2 from 'conancenter' - Downloaded
 Packages
-    apr/1.7.0:235cd3ce178d1014cca9ff9aee81b818b8153559 - Download
-    apr-util/1.6.1:cf3e35554b27f2ed4676666396ab836553495caa - Download
-    boost/1.73.0:a77ca77d437f4354bdec12173c1a0c2b8b7d01f4 - Cache
-    bzip2/1.0.8:1d984b241c5c01f748cafe0b37dc9567ed236fef - Cache
-    expat/2.4.1:224956cd189fb14f9771be519f4fd0815adc0e17 - Download
-    fmt/6.1.2:038baac88f4c7bfa972ce5adac1616bed8fe2ef4 - Cache
-    libbacktrace/cci.20210118:23b828d52c0630e6b0b96d2945419feb7843c4f8 - Cache
-    libiconv/1.16:23b828d52c0630e6b0b96d2945419feb7843c4f8 - Download
-    libmysqlclient/8.0.25:cad4ca652d2c792719adf059c02b3a0b9252b720 - Download
-    libpq/13.4:23b828d52c0630e6b0b96d2945419feb7843c4f8 - Download
-    lz4/1.9.3:23b828d52c0630e6b0b96d2945419feb7843c4f8 - Download
-    openssl/1.1.1l:23b828d52c0630e6b0b96d2945419feb7843c4f8 - Download
-    pcre/8.45:25c45d0ee1909d2d499509931e4d76ad043ea44f - Download
-    poco/1.11.1:2348ad58686265cf1ab2cd2d68a60c46f6324290 - Download
-    sqlite3/3.36.0:305e8b0d0ecb25e2a2f8cc5b94cb273d8478ca1e - Download
-    zlib/1.2.11:23b828d52c0630e6b0b96d2945419feb7843c4f8 - Cache
-    zstd/1.5.2:45708ed6e5806ef31e05ce6fc0318b81ec6e0f2c - Download
+    boost/1.73.0:9122dbc53b72d49447592b7c1471ee184105ccbd - Build
+    brotli/1.0.9:5a61a86bb3e07ce4262c80e1510f9c05e9b6d48b - Build
+    bzip2/1.0.8:53b5fd22ba061620078deefdae9a437c5f693201 - Build
+    double-conversion/3.2.0:5a61a86bb3e07ce4262c80e1510f9c05e9b6d48b - Build
+    fmt/6.1.2:5a61a86bb3e07ce4262c80e1510f9c05e9b6d48b - Build
+    freetype/2.11.1:ab90453798d425d2569b30b281e7ffd71b83ed38 - Build
+    glib/2.71.3:071b4077f1583387795f06078867110cab40f8e3 - Build
+    harfbuzz/4.0.1:7e88fa6f6b8d1ca600e7610d97c08b509bfced25 - Build
+    libelf/0.8.13:5a61a86bb3e07ce4262c80e1510f9c05e9b6d48b - Build
+    libffi/3.4.2:5a61a86bb3e07ce4262c80e1510f9c05e9b6d48b - Build
+    libgettext/0.21:3a0c755604aed452fe37b5c76f06955fbbb281a9 - Build
+    libiconv/1.16:5a61a86bb3e07ce4262c80e1510f9c05e9b6d48b - Build
+    libpng/1.6.37:8cfa2f2d9045fcd29f9c7fb36ce25c8202159f15 - Build
+    libpq/13.6:5a61a86bb3e07ce4262c80e1510f9c05e9b6d48b - Build
+    openssl/1.1.1m:5a61a86bb3e07ce4262c80e1510f9c05e9b6d48b - Build
+    pcre/8.45:97784e95634d4ba44bdfe64a03a22b6572de449e - Build
+    pcre2/10.37:142a166c1e6b5f6def60804ab32f10b80e44f0f4 - Build
+    qt/6.2.3:4dd2ebd2daf565b1fedf8e8d89aa1e55fa87e683 - Build
+    sqlite3/3.38.1:5f7123717a504693e44bcb8a193630a4befc5e1b - Build
+    zlib/1.2.11:5a61a86bb3e07ce4262c80e1510f9c05e9b6d48b - Build
+Build requirements
+    autoconf/2.71 from 'conancenter' - Cache
+    automake/1.16.4 from 'conancenter' - Cache
+    b2/4.7.1 from 'conancenter' - Cache
+    cmake/3.22.0 from 'conancenter' - Cache
+    gnu-config/cci.20201022 from 'conancenter' - Cache
+    m4/1.4.19 from 'conancenter' - Cache
+    meson/0.60.2 from 'conancenter' - Cache
+    msys2/cci.latest from 'conancenter' - Cache
+    nasm/2.15.05 from 'conancenter' - Cache
+    ninja/1.10.2 from 'conancenter' - Cache
+    pkgconf/1.7.4 from 'conancenter' - Cache
+    strawberryperl/5.30.0.1 from 'conancenter' - Cache
+Build requirements packages
+    autoconf/2.71:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9 - Download
+    automake/1.16.4:3e48e69237f7f2196164383ef9dedf0f93cbf249 - Download
+    b2/4.7.1:ca33edce272a279b24f87dc0d4cf5bbdcffbc187 - Cache
+    cmake/3.22.0:0a420ff5c47119e668867cdb51baff0eca1fdb68 - Cache
+    gnu-config/cci.20201022:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9 - Cache
+    m4/1.4.19:0a420ff5c47119e668867cdb51baff0eca1fdb68 - Cache
+    meson/0.60.2:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9 - Cache
+    msys2/cci.latest:eee3fba89db6d777329de604625af8c30d46f080 - Cache
+    nasm/2.15.05:0a420ff5c47119e668867cdb51baff0eca1fdb68 - Cache
+    ninja/1.10.2:0a420ff5c47119e668867cdb51baff0eca1fdb68 - Cache
+    pkgconf/1.7.4:5a61a86bb3e07ce4262c80e1510f9c05e9b6d48b - Build
+    strawberryperl/5.30.0.1:ca33edce272a279b24f87dc0d4cf5bbdcffbc187 - Download
 
 Installing (downloading, building) binaries...
-apr/1.7.0: Retrieving package 235cd3ce178d1014cca9ff9aee81b818b8153559 from remote 'conancenter' 
+strawberryperl/5.30.0.1: Retrieving package ca33edce272a279b24f87dc0d4cf5bbdcffbc187 from remote 'conancenter' 
 Downloading conanmanifest.txt
 Downloading conaninfo.txt
 Downloading conan_package.tgz
-apr/1.7.0: Package installed 235cd3ce178d1014cca9ff9aee81b818b8153559
-apr/1.7.0: Downloaded package revision 0
-expat/2.4.1: Retrieving package 224956cd189fb14f9771be519f4fd0815adc0e17 from remote 'conancenter' 
-Downloading conanmanifest.txt
-Downloading conaninfo.txt
-Downloading conan_package.tgz
-expat/2.4.1: Package installed 224956cd189fb14f9771be519f4fd0815adc0e17
-expat/2.4.1: Downloaded package revision 0
-libiconv/1.16: Retrieving package 23b828d52c0630e6b0b96d2945419feb7843c4f8 from remote 'conancenter' 
-Downloading conanmanifest.txt
-Downloading conaninfo.txt
-Downloading conan_package.tgz
-libiconv/1.16: Package installed 23b828d52c0630e6b0b96d2945419feb7843c4f8
-libiconv/1.16: Downloaded package revision 0
-libpq/13.4: Retrieving package 23b828d52c0630e6b0b96d2945419feb7843c4f8 from remote 'conancenter' 
-Downloading conanmanifest.txt
-Downloading conaninfo.txt
-Downloading conan_package.tgz
-libpq/13.4: Package installed 23b828d52c0630e6b0b96d2945419feb7843c4f8
-libpq/13.4: Downloaded package revision 0
-lz4/1.9.3: Retrieving package 23b828d52c0630e6b0b96d2945419feb7843c4f8 from remote 'conancenter' 
-Downloading conanmanifest.txt
-Downloading conaninfo.txt
-Downloading conan_package.tgz
-lz4/1.9.3: Package installed 23b828d52c0630e6b0b96d2945419feb7843c4f8
-lz4/1.9.3: Downloaded package revision 0
-openssl/1.1.1l: Retrieving package 23b828d52c0630e6b0b96d2945419feb7843c4f8 from remote 'conancenter' 
-Downloading conanmanifest.txt
-Downloading conaninfo.txt
-Downloading conan_package.tgz
-openssl/1.1.1l: Package installed 23b828d52c0630e6b0b96d2945419feb7843c4f8
-openssl/1.1.1l: Downloaded package revision 0
-sqlite3/3.36.0: Retrieving package 305e8b0d0ecb25e2a2f8cc5b94cb273d8478ca1e from remote 'conancenter' 
-Downloading conanmanifest.txt
-Downloading conaninfo.txt
-Downloading conan_package.tgz
-sqlite3/3.36.0: Package installed 305e8b0d0ecb25e2a2f8cc5b94cb273d8478ca1e
-sqlite3/3.36.0: Downloaded package revision 0
-zstd/1.5.2: Retrieving package 45708ed6e5806ef31e05ce6fc0318b81ec6e0f2c from remote 'conancenter' 
-Downloading conanmanifest.txt
-Downloading conaninfo.txt
-Downloading conan_package.tgz
-zstd/1.5.2: Package installed 45708ed6e5806ef31e05ce6fc0318b81ec6e0f2c
-zstd/1.5.2: Downloaded package revision 0
-apr-util/1.6.1: Retrieving package cf3e35554b27f2ed4676666396ab836553495caa from remote 'conancenter' 
-Downloading conanmanifest.txt
-Downloading conaninfo.txt
-Downloading conan_package.tgz
-apr-util/1.6.1: Package installed cf3e35554b27f2ed4676666396ab836553495caa
-apr-util/1.6.1: Downloaded package revision 0
-libmysqlclient/8.0.25: Retrieving package cad4ca652d2c792719adf059c02b3a0b9252b720 from remote 'conancenter' 
-Downloading conanmanifest.txt
-Downloading conaninfo.txt
-Downloading conan_package.tgz
-libmysqlclient/8.0.25: Package installed cad4ca652d2c792719adf059c02b3a0b9252b720
-libmysqlclient/8.0.25: Downloaded package revision 0
-pcre/8.45: Retrieving package 25c45d0ee1909d2d499509931e4d76ad043ea44f from remote 'conancenter' 
-Downloading conanmanifest.txt
-Downloading conaninfo.txt
-Downloading conan_package.tgz
-pcre/8.45: Package installed 25c45d0ee1909d2d499509931e4d76ad043ea44f
-pcre/8.45: Downloaded package revision 0
-poco/1.11.1: Retrieving package 2348ad58686265cf1ab2cd2d68a60c46f6324290 from remote 'conancenter' 
-Downloading conanmanifest.txt
-Downloading conaninfo.txt
-Downloading conan_package.tgz
-poco/1.11.1: Package installed 2348ad58686265cf1ab2cd2d68a60c46f6324290
-poco/1.11.1: Downloaded package revision 0
-apr/1.7.0: Settings APR_ROOT environment var: /home/noe/.conan/data/apr/1.7.0/_/_/package/235cd3ce178d1014cca9ff9aee81b818b8153559
-bzip2/1.0.8: Already installed!
-bzip2/1.0.8: Appending PATH environment variable: /home/noe/.conan/data/bzip2/1.0.8/_/_/package/1d984b241c5c01f748cafe0b37dc9567ed236fef/bin
-fmt/6.1.2: Already installed!
-libbacktrace/cci.20210118: Already installed!
-libiconv/1.16: Appending PATH environment var: /home/noe/.conan/data/libiconv/1.16/_/_/package/23b828d52c0630e6b0b96d2945419feb7843c4f8/bin
-sqlite3/3.36.0: Appending PATH env var with : /home/noe/.conan/data/sqlite3/3.36.0/_/_/package/305e8b0d0ecb25e2a2f8cc5b94cb273d8478ca1e/bin
-zlib/1.2.11: Already installed!
-apr-util/1.6.1: Appending PATH env var : /home/noe/.conan/data/apr-util/1.6.1/_/_/package/cf3e35554b27f2ed4676666396ab836553495caa/bin
-apr-util/1.6.1: Settings APR_UTIL_ROOT environment var: /home/noe/.conan/data/apr-util/1.6.1/_/_/package/cf3e35554b27f2ed4676666396ab836553495caa
-boost/1.73.0: Already installed!
-pcre/8.45: Appending PATH environment variable: /home/noe/.conan/data/pcre/8.45/_/_/package/25c45d0ee1909d2d499509931e4d76ad043ea44f/bin
-conanfile.txt: Generator txt created conanbuildinfo.txt
-conanfile.txt: Generator cmake_find_package created Findfmt.cmake
-conanfile.txt: Generator cmake_find_package created FindBoost.cmake
-conanfile.txt: Generator cmake_find_package created FindPoco.cmake
-conanfile.txt: Generator cmake_find_package created Findlibbacktrace.cmake
-conanfile.txt: Generator cmake_find_package created FindPCRE.cmake
-conanfile.txt: Generator cmake_find_package created FindSQLite3.cmake
-conanfile.txt: Generator cmake_find_package created FindPostgreSQL.cmake
-conanfile.txt: Generator cmake_find_package created Findapr-util.cmake
-conanfile.txt: Generator cmake_find_package created FindMySQL.cmake
-conanfile.txt: Generator cmake_find_package created FindZLIB.cmake
-conanfile.txt: Generator cmake_find_package created FindBZip2.cmake
-conanfile.txt: Generator cmake_find_package created FindEXPAT.cmake
-conanfile.txt: Generator cmake_find_package created FindOpenSSL.cmake
-conanfile.txt: Generator cmake_find_package created Findapr.cmake
-conanfile.txt: Generator cmake_find_package created FindIconv.cmake
-conanfile.txt: Generator cmake_find_package created Findzstd.cmake
-conanfile.txt: Generator cmake_find_package created Findlz4.cmake
-conanfile.txt: Aggregating env generators
-conanfile.txt: Generated conaninfo.txt
-conanfile.txt: Generated graphinfo
-WARN: libmysqlclient/8.0.25: requirement openssl/1.1.1m overridden by poco/1.11.1 to openssl/1.1.1l 
--- 1 CMAKE_MODULE_PATH: 
--- 2 CMAKE_MODULE_PATH: /home/noe/Github/conan-test/cmake-build-debug
--- Conan: Using autogenerated Findfmt.cmake
--- Library fmtd found /home/noe/.conan/data/fmt/6.1.2/_/_/package/038baac88f4c7bfa972ce5adac1616bed8fe2ef4/lib/libfmtd.a
--- Found: /home/noe/.conan/data/fmt/6.1.2/_/_/package/038baac88f4c7bfa972ce5adac1616bed8fe2ef4/lib/libfmtd.a
--- Configuring done
--- Generating done
--- Build files have been written to: /home/noe/Github/conan-test/cmake-build-debug
+WARN: qt/6.2.3: requirement sqlite3/3.38.0 overridden by your conanfile to sqlite3/3.38.1 
+strawberryperl/5.30.0.1: WARN: Package binary is corrupted, removing: ca33edce272a279b24f87dc0d4cf5bbdcffbc187
+strawberryperl/5.30.0.1: ERROR: Exception while getting package: ca33edce272a279b24f87dc0d4cf5bbdcffbc187
+strawberryperl/5.30.0.1: ERROR: Exception: <class 'conans.errors.ConanException'> Error while extracting downloaded file 'C:\Users\bourg\.conan\data\strawberryperl\5.30.0.1\_\_\dl\pkg\ca33edce272a279b24f87dc0d4cf5bbdcffbc187\conan_package.tgz' to C:\.conan\6df8e9\1
+[Errno 28] No space left on device
+Folder removed
+ERROR: Error while extracting downloaded file 'C:\Users\bourg\.conan\data\strawberryperl\5.30.0.1\_\_\dl\pkg\ca33edce272a279b24f87dc0d4cf5bbdcffbc187\conan_package.tgz' to C:\.conan\6df8e9\1
+[Errno 28] No space left on device
+Folder removed
+CMake Error at cmake-build-debug/conan.cmake:638 (message):
+  Conan install failed='1'
+Call Stack (most recent call first):
+  CMakeLists.txt:75 (conan_cmake_install)
+
+
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/bourg/Documents/GitHub/conan-test/cmake-build-debug/CMakeFiles/CMakeOutput.log".

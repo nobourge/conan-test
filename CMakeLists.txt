@@ -43,14 +43,33 @@ endif()
 
 include(${CMAKE_BINARY_DIR}/conan.cmake)
 
-conan_cmake_configure(REQUIRES
-        fmt/6.1.2
-        boost/1.73.0
-        poco/1.11.1
+if(UNIX)
+    if (LINUX)
+        conan_cmake_configure(REQUIRES
+                fmt/6.1.2
+                boost/1.73.0
+                sqlite3/3.38.1
+                qt/6.2.3
 
-        GENERATORS cmake_find_package)
+                GENERATORS cmake_find_package)
 
-conan_cmake_autodetect(settings)
+        conan_cmake_autodetect(settings)
+    endif ()
+elseif(win32)
+    conan_cmake_configure(REQUIRES
+            fmt/6.1.2
+            sqlite3/3.38.1
+            qt/6.2.3
+
+            GENERATORS cmake_find_package)
+
+    conan_cmake_autodetect(settings)
+
+    find_package(boost/1.73.0)
+
+
+endif ()
+
 
 #conan install : Installs the requirements specified in a recipe (conanfile.py or conanfile.txt).
 #conan_cmake_install is a wrapper for conan install
@@ -59,7 +78,13 @@ conan_cmake_install(PATH_OR_REFERENCE .
         REMOTE conancenter
         SETTINGS ${settings})
 
-set(CMAKE_MODULE_PATH /home/noe/Github/conan-test/cmake-build-debug)
+if(UNIX)
+    if (LINUX)
+        set(CMAKE_MODULE_PATH /home/noe/Github/conan-test/cmake-build-debug)
+    endif ()
+elseif(win32)
+    set(CMAKE_MODULE_PATH /home/noe/Github/conan-test/cmake-build-debug)
+endif ()
 
 find_package(fmt)
 

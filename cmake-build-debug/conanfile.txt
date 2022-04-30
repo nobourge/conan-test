@@ -1,6 +1,7 @@
 [requires]
 fmt/6.1.2
 boost/1.73.0
-poco/1.11.1
+sqlite3/3.38.1
+qt/6.2.3
 [generators]
 cmake_find_package
